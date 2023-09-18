@@ -1,0 +1,35 @@
+
+<html lang="en">
+  <link rel="stylesheet" type="text/css" href="./color_simulator.css" />
+
+  <body>
+    <canvas id="canvas" width="1000" height="200"></canvas>
+
+    <div class="controls">
+      <div class="brightness control">
+        <label for="brightness">Brightness</label>
+        <input type="range" id="brightness" name="brightness" min="0" max="2" step="0.01" value="0.5" list="temperature_values" />
+      </div>
+
+      <div class="color_temperature control">
+        <label for="color_temperature">Color Temperature</label>
+        <input type="range" id="color_temperature" name="color_temperature" min="1000" max="10000" step="1" value="4000" list="temperature_values" />
+      </div>
+      <datalist id="temperature_values">
+        <option value="1000">1000k</option>
+        <option value="3250">3250k</option>
+        <option value="6000">6000k</option>
+        <option value="8250">8250k</option>
+        <option value="10000">10000k</option>
+      </datalist>
+
+      <div class="filter_strength_container control">
+        <label for="filter_strength">Filter Strength</label>
+        <input type="range" id="filter_strength" name="filter_strength" min="0" max="1" step="0.01" value="1.0" />
+      </div>
+
+    </div>
+  </body>
+
+  <script type="module" src="./color_simulator.ts"></script>
+</html>

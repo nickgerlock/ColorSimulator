@@ -1,0 +1,44 @@
+body {
+  background: #000000;
+  color: #666666;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+datalist {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  width: 400px;
+  margin: auto;
+}
+
+option {
+  padding: 0;
+}
+
+canvas {
+  margin: auto;
+  margin-top: 20em;
+  display: block;
+}
+
+.controls {
+  width: 400px;
+  margin: auto;
+  font-size: larger;
+}
+
+.controls label {
+  display: block;
+  text-align: center;
+}
+
+.controls input {
+  display: block;
+  margin: auto;
+  width: 400px;
+}
+
+.controls .control {
+  margin-top: 1em;
+}
